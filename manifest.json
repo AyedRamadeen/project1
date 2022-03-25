@@ -1,0 +1,18 @@
+﻿{
+  "name": "Style Changer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "In progres Style Changer Extension",
+  "permissions": ["scripting","storage","tabs","alarms"],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Style Changer Extension",
+    "default_popup": "index.html"
+  }
+}
