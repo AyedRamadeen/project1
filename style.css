@@ -11,6 +11,10 @@
   z-index: 10000001;
   right: 10px;
   top: 10px;
+  width: 350px;
+  height: 440px;
+  background: #ddd;
+  width: 260px;
 }
 .mainMenu .divFontSize {
   width: 100px;

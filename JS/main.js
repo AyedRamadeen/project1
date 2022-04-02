@@ -208,12 +208,66 @@ function pickAnElement() {
 
     };
     
-    // let fontSelect = document.getElementById('selectFontSize');
-    // fontSelect.addEventListener('input', () => {
-    //     console.log(selectedComponent);
-    //     console.log(fontSelect.value);
-    //     selectedComponent.style.cssText = `font-size: ${fontSelect.value}px !important;`;
-    // })
+    let fontfamilys = document.getElementById('selectFontFamily');
+    fontfamilys.addEventListener('input', () => {
+        selectedComponent.style.fontFamily = fontfamilys.value;
+    })
+
+    let fontSelect = document.getElementById('selectFontSize');
+    fontSelect.addEventListener('input', () => {
+        console.log(selectedComponent);
+        console.log(fontSelect.value);
+        selectedComponent.style.cssText = `font-size: ${fontSelect.value}px !important;`;
+    })
+
+    let boldFontBtn = document.getElementById('boldFontBtn');
+    boldFontBtn.addEventListener('click', () => {
+        selectedComponent.style.fontWeight = "bold"
+    })
+
+    let normalFontBtn = document.getElementById('normalFontBtn');
+    normalFontBtn.addEventListener('click', () => {
+        selectedComponent.style.fontWeight = "normal"
+    })
+
+    let capitalLetterFontBtn = document.getElementById('capitalLetterFontBtn');
+    capitalLetterFontBtn.addEventListener('click', () => {
+        selectedComponent.style.textTransform  = "capitalize"
+    })
+
+    let uppercaseLetterFontBtn = document.getElementById('uppercaseLetterFontBtn');
+    uppercaseLetterFontBtn.addEventListener('click', () => {
+        selectedComponent.style.textTransform  = "uppercase"
+    })
+
+    let lowercaseLetterFontBtn = document.getElementById('lowercaseLetterFontBtn');
+    lowercaseLetterFontBtn.addEventListener('click', () => {
+        selectedComponent.style.textTransform  = "lowercase"
+    })
+
+    let textLineHeight = document.getElementById('text-line-height');
+    textLineHeight.addEventListener('input', () => {
+        selectedComponent.style.lineHeight  = textLineHeight.value;
+    })
+
+    let letterSpacingFont = document.getElementById('letterSpacingFont');
+    letterSpacingFont.addEventListener('input', () => {
+        selectedComponent.style.letterSpacing   = letterSpacingFont.value + 'px';
+    })
+
+    let backgroundColor = document.getElementById('backgroundColor');
+    backgroundColor.addEventListener('input', () => {
+        selectedComponent.style.background = backgroundColor.value;
+    })
+    
+    let fontColor = document.getElementById('fontColor');
+    fontColor.addEventListener('input', () => {
+        selectedComponent.style.color = fontColor.value;
+    })
+    let hideMenu = document.getElementById('hideMenu');
+    hideMenu.addEventListener('click', () => {
+        document.getElementById('mainMenu').style.display = 'none'
+    })
 
     var myDomOutline = DomOutline({
         onClick: myExampleClickHandler,
@@ -225,6 +279,7 @@ function pickAnElement() {
     myDomOutline.start();
 
 }
+
 //to begin outline mode
 document.getElementById("selectionBtn").addEventListener("click", () => {
     chrome.tabs.query({ active: true, currentWindow: true }, (tab) => {
@@ -237,26 +292,3 @@ document.getElementById("selectionBtn").addEventListener("click", () => {
 
 })
 
-
-
-// chrome.storage.local.get("selectedComponent", function(data) {
-//     if(typeof data.selectedComponent == "undefined") {
-//         // That's kind of bad
-//     } else {
-//         alert(data)
-//         if(data) {
-//             console.log('ssss', data)
-//         }
-        
-//         document.getElementById("font-familys").addEventListener("change", () => {
-//             alert(document.getElementById("font-familys").value)
-//             // selectedComponent.style.cssText = `font-size: 30px !important;`;
-//         })
-        
-//     }
-// });
-// document.getElementById('fontSize').addEventListener('input', () => {
-//     var myPort = chrome.runtime.connect({ name: "port-from-cs" });
-//     myPort.postMessage({ fontSize: document.getElementById('fontSize').value });
-
-// })

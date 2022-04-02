@@ -1,132 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- master css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- google font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- font awesome lib. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-
-<!-- font awesome lib. -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <title>Style Changer</title> 
-</head>
-<body>
+    <title>Style Changer</title>
+  </head>
+  <body>
     <div class="work-flow">
-        <div class="header">
-        <h1>Style Changer </h1>
+      <div class="header">
+        <h1>Style Changer</h1>
+      </div>
+
+      <div class="cursor">
+        <button id="selectionBtn" class="cursor-button">
+          <i class="fa fa-mouse-pointer"></i>
+        </button>
+        <input type="text" id="cursorText" value="" />
+      </div>
     </div>
 
-        <div class="cursor">
-        <button id="selectionBtn" class="cursor-button"><i class="fa fa-mouse-pointer"></i></button>
-        <input type="text" id="cursorText" value="aaaaaaaaaaaaaa"> 
-        </div>
-    <div class="text">
-        <h2>Text</h2>
-        <div class="text font-family">
-            <label for="font-familys">Font Family:</label>
-            <select id="font-familys">
-            <option value="1">  Calibri  </option>
-            <option value="2">  Crimson Text  </option>
-            <option value="3">   Droid Sans </option>
-            <option value="4">  Fira Code  </option>
-            <option value="5">  Monaco  </option>
-            <option value="6">   Lato </option>  
-        </select> 
-    </div>
-    <div class="text font-size">
-        <label for="font">Font Size:</label>
-        <select name="font-size" id="font-sizes">
-            <option value="1">  9  </option>
-            <option value="2">  10 </option>
-            <option value="3">   11 </option>
-            <option value="4">  12  </option>
-            <option value="5">  14</option>
-            <option value="6">   18 </option> 
-            <option value="7">  24 </option>
-            <option value="8">  30 </option>
-            <option value="9">   36 </option>
-            <option value="10">  48  </option>
-            <option value="11">  64 </option>
-            <option value="12">   72 </option> 
-            <option value="13">   96 </option> 
-        </select>
-    </div>
-    <div class="text font-weight">
-    <label>Font Weight:</label>
-    
-
-
-    
-
-   
-        <input class="button1"  type="button" name="Bold" value="Bold">
-        <input class="button1"   type="button" name="Normal" value="Normal">
-    </div>
- 
-
-    <div class="text font-style">
-        <label>Font Style:</label>
-        <input  class="button1"   type="button" name="Abc" value="Abc">
-        <input   class="button1"  type="button" name="ABC" value="ABC">
-        <input   class="button3"  type="button" name="abc" value="abc">
-       
-    </div>
-
-    <div class="text transform">
-        <label >Transform:</label>
-        <input  class="button1"  type="button" name="Bold" value="Bold">
-        <input   class="button1"  type="button" name="Bold" value="Normal">
-    </div>
-
-    <div class="text line-height">
-        <label> Line Height</label>
-        <input id="text-line-height" type="number"> 
-    </div>
-    <div class="text letter-spacing">
-        <label> Letter Spacing</label>
-        <input id="text-number"type="number"> 
-    </div>
-</div>
-<div class="color-and-background"> 
-    <h2>Color & Background</h2>
-
-<div class="background-color">
-        <label>Background Color</label>
-        <input type="color" class="background-color-text"> 
-    </div>
-    <div class="colorize">
-        <label for="color"> Color</label>
-        <input type="color" class="color"> 
-    </div>
-
-    
-</div>
-</div>
-
-<script src="JS/main.js"></script>
-</body>
-
-
+    <script src="JS/main.js"></script>
+  </body>
 </html>
-
-  
-
