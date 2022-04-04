@@ -92,6 +92,7 @@
     border: 1px solid var(--main-border-color);
     margin-right: 15px;
     margin-left: 0px;
+    margin-bottom: 0px;
   }
 
   .mainMenu #letterSpacingFont {
@@ -101,6 +102,7 @@
     border: 1px solid var(--main-border-color);
     margin-right: 15px;
     margin-left: 0px;
+    margin-bottom: 0px;
   }
   .mainMenu .font-style {
     margin-top: 43px;
@@ -153,15 +155,19 @@
     height: 20px;
     border: none;
     background-color: var(--main-button-color);
-    margin-right: 2px;
     font-size: 11px;
-    margin-left: 2px;
+    margin: 0px 2px 0px 2px;
     border-radius: 5px;
     cursor: pointer;
     float: inline-start;
     justify-content: space-around;
     color: white;
   }
+  
+  .mainMenu .button3 {
+    margin: 5px 0px 0px 2px;
+  }
+
   
   .mainMenu .color {
     width: 40px;
@@ -232,8 +238,14 @@
 }
 
 .mainMenu select{
-  padding-right: 4px;
+  padding: 0px 4px 0px 0px;
   border: 1px solid #d9d9d9;
   height: 20px;
   border-radius: 2px;
+  margin-bottom: 0px;
+}
+
+
+#backgroundColor, #fontColor{
+  margin-bottom: 0px;
 }
