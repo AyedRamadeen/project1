@@ -12,6 +12,9 @@ function createMenu() {
     <div style="height:20px">
     <span id="hideMenu">x</span>
     </div>
+    <div style="text-align: center;">
+        <input style="text-align: center;height: 30px;width: 110px;" id="deleteElement"  type="button" name="deleteElement" value="Delete Element">
+    </div>
     <div class="text1">
     <h2>Text</h2>
     <div class="text font-family">

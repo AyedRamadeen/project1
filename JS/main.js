@@ -207,6 +207,11 @@ function pickAnElement() {
  
 
     };
+
+    let deleteElement = document.getElementById('deleteElement');
+    deleteElement.addEventListener('click', () => {
+        selectedComponent.style.display = 'none'
+    })
     
     let fontfamilys = document.getElementById('selectFontFamily');
     fontfamilys.addEventListener('input', () => {
